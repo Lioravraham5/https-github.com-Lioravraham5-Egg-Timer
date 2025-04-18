@@ -56,10 +56,9 @@ class ViewController: UIViewController {
             timer.invalidate() // stop the timer - cancel it
             label.text = "DONE!"
             
-            // play "alarm_sound.mp3"
-            let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3")
+            let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3") // find alarm_sound.mp3" in the application
             player = try! AVAudioPlayer(contentsOf: url!) // find "alarm_sound.mp3" file in the project
-            player.play()
+            player.play() 
 
         }
         
